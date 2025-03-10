@@ -30,3 +30,44 @@ Algumas referências acadêmicas (com artigos científicos, etc):
     - Programação paralela
 - Matemética e física;
 - Marketing e gerenciamento de projetos.
+
+---
+
+## Aula 2 - 10/03/25
+### Gestão de Projetos
+
+### O que é um projeto?
+- Conjunto de atividades temporárias, realizadas por um grupo, com o objetivo de produzir um produto ou um serviço.
+
+### Projeto x Processos (Operações)
+![Projeto x Processos](image1.png)
+
+### Ciclo de vida do projeto
+![Ciclo de vida do Projeto](image-1.png)
+![Intensidade x Projeto](image-2.png)
+![Grau x Tempo Projeto](image-3.png)
+
+### Áreas de conhecimento em gerenciamento de projetos
+- Integração
+- Escopo
+- Tempo
+- Custos
+- Qualidade
+- Recursos humanos
+- Comunicações
+- Riscos
+- Aquisições
+- Partes interessadas
+
+### Seleção e avaliação de projetos
+Multicritérios:
+- Financeiros
+- Alinhamento estratégico
+- Urgência
+- Interessados
+- Risco
+- Recursos Humanos
+- Competência
+
+### TICs em Projetos
+![TICs em Projetos](image-4.png)
