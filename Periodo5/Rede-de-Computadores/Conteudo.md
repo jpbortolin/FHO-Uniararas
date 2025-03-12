@@ -83,7 +83,11 @@ Para a classificação das redes é considerado o tipo de conexão e a amplitude
 
 A internet é a conexão entre as "ANs", em ordem decrescente de tamanho geográfico.
 
+
+
 ---
+
+
 
 # Aula 2 - 25/02/2025
 ## Modelo de Referência OSI (ISO 7498)
@@ -96,8 +100,9 @@ A internet é a conexão entre as "ANs", em ordem decrescente de tamanho geográ
 > O TCP/IP é uma implementação das camadas OSI.
 
 ### Camada Física
-- Responsável pela transmissão dos _bits_ através do meio.
-- É a camada que faz a leitura dos pulsos no meio de transmissão, como os do cabo de rede.
+> Responsável pela transmissão dos _bits_ através do meio.
+
+> É a camada que faz a leitura dos pulsos no meio de transmissão, como os do cabo de rede.
 - Tópicos envolvidos:
     - Topologia (estudada na aula passada);
     - Meios de transmissão (estudada na aula passada);
@@ -117,24 +122,78 @@ A internet é a conexão entre as "ANs", em ordem decrescente de tamanho geográ
 
 > Um CRC é um mecanismo de detecção de erro comumente usado em redes de computador e de armazenamento para identificar dados alterados ou corrompidos durante a transmissão. - Cisco.
 
-### Camada de Rede
-- Padroniza e define os endereços das máquians da rede de coputadores.
-- Gere o tráfego e rotas da rede.
+### Camada de Rede ou Roteamento (Mac)
+- Padroniza e define os endereços das máquinas da rede de coputadores.
+> Gere o tráfego e rotas da rede. 
 
 ### Camada de Transporte
-- Transição (conversão) entre o software e o hardware.
+> Transição (conversão) entre o software e o hardware.
 - Abstrai a evolução dos hardwares para não afetar as camadas superiores.
 - Valida se a informação recebida ou enviada está completa, antes ou após o empacotamento para transmissão.
 
 ### Camada de Sessão
-- Permite que usuários possam estabelecer sessões entre as máquinas da rede.
+> Permite que usuários possam estabelecer sessões entre as máquinas da rede. 
 - Nela, também é tratada a etapa de sincroninismo da comunicação, caso tenha havido alguma oscilação no processo.
-- Gerenciamento de atividades (transações).
+> Gerenciamento de atividades (transações). 
 
 ### Camada de Apresentação
 - E uma camada de tradução dos dados, chamada de codificação, para o uso da próxima camada.
-- Realiza uma criptografia básica do dado.
-- Compacta os dados.
+- Realiza uma criptografia básica do dado. 
+> Compacta os dados. 
 
 ### Camada da Aplicação
-- Esta camada oferece o acesso as aplicações que estão sendo executadas nos computadores ligados na rede.
+> Esta camada oferece o acesso as aplicações que estão sendo executadas nos computadores ligados na rede.
+
+
+
+---
+
+    
+
+# Aula 3 - 11/03/2025
+## Modelo de TCP/IP
+
+O modelo TCP/IP possui quatro camadas: Camada de Aplicação, Camada de Transporte, Camada de Rede, Camada de Enlace e a Camada de Física (normalmente não conta).
+
+Cada camada possui um conjunto de protocolos que permitem a transmissão de dados e a comutação de pacotes entre diferentes nós em uma rede.
+
+> O modelo TCP/IP implementa o modelo OSI, onde o modelo prático é o próprio TCP/IP, e o modelo teórico é o OSI.
+
+**Camada Aplicação**
+
+Nesta camada estão as aplicações que serão utilizadas pelo usuário para realizar a comunicação.
+
+Fazem o uso das camadas para realizar a comunicação com as redes.
+
+- Protocolos: DHCP, HTTP, HTTPS, DNS, FTP, IMAP...
+
+**Camada de Transporte**
+
+É a camada responsável pela transferência de dados entre duas máquinas, independente da aplicação usada e do tipo. Ela reúne protocolos de transporte end-to-end entre máquinas, isto é, uma entidade (software/hardware).
+
+- Usa protocolos TCP ou UDP
+    - TCP (Transmission Control Protocol) é uma rede orientada a conexão
+    - UDP (User Datagram Protocol) não é uma rede orientada a conexão
+
+> **TCP** faz o controle de fluxo a fim de evitar congestionamento no fluxo da comunicação. Usamos ele quando precisamos garantir que a informação chegue completa no seu destino.
+
+> **UDP** é um protocolo não confiável, pois ele nao controla o fluxo, não daz o reenvio de segmentos que falharam na transmissão, também não realiza a ordenação de pacotes que chegaram ao destino desordenados e não retorna a confirmação de que os dados foram entregues ao destino. Um exemplo é as ligações em vídeo pelo Whatsapp e ou pelo Skype, onde há a alteração dos pixels de transmissão (imagem não fica muito boa), a voz muitas vezes não se encaixa com o vídeo, há uns engasgos...
+
+**Camada de Internet (Inter-redes)**
+
+Responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Ela possui embasamento nos protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol), que são operalizados na camada de rede do Modelo OSI também.
+
+> utilizando o comando 'ping' no cmd ou no Git Bash e logo após consultar um site, ele utiliza o protocolo ICMP para consultar os pacotes enviados para o site e mostrar se teve perdas ou não.
+
+![CMD - Utilizando comando para estatísca de pacotes enviados e recebidos](Images/image.png)
+
+**Protocolo IP** é um protocolo de comunicação usado entre todas as máquinas de uma rede para encaminhamento dos dados. 
+
+O **IPv4** é composto por uma sequência de 8 bits com formato x.x.x.x, em que X pode ir de 0 à 255.3
+
+Link de video sobre Protocolo IP: https://www.youtube.com/watch?v=HNQD0qJ0TC4
+
+**Camada de Enlace de Dados**
+
+
+- Protocolos usados: PPP (point-to-point), NDP, ARP, MAC...
