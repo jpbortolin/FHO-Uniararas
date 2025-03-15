@@ -47,7 +47,7 @@ Contrária à primeira, as não determiníticas não possuem controle de tempo, 
 Todos os dispositivos recebem a informação que era destinada à um dos dispositivos, dado que estão interligados pelo mesmo cabo. O dispositivo ao qual a informação não é o destino, ignora os pacotes recebidos.
 A desvantagem é a lentidão, segurança e fragilidade da rede, dado que o rompimento em qualquer local do cabo, tornará todos os dispositivos offline.
 
-![topologia barramento](Images/image.png)
+![topologia barramento](Images/image-0.png)
 
 ### Estrela
 Nesta topologia, os dispositivos da rede são interligados em um nó central.
