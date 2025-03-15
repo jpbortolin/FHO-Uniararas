@@ -187,13 +187,14 @@ Responsável pela permissão de envio de pacotes por hosts a qualquer rede e pel
 
 ![CMD - Utilizando comando para estatísca de pacotes enviados e recebidos](Images/image.png)
 
-**Protocolo IP** é um protocolo de comunicação usado entre todas as máquinas de uma rede para encaminhamento dos dados. 
+- **Protocolo IP** é um protocolo de comunicação usado entre todas as máquinas de uma rede para encaminhamento dos dados. 
 
-O **IPv4** é composto por uma sequência de 8 bits com formato x.x.x.x, em que X pode ir de 0 à 255.3
+- O **IPv4** é composto por uma sequência de 8 bits com formato x.x.x.x, em que X pode ir de 0 à 255.3
 
-Link de video sobre Protocolo IP: https://www.youtube.com/watch?v=HNQD0qJ0TC4
+- Link de video sobre Protocolo IP: https://www.youtube.com/watch?v=HNQD0qJ0TC4
 
 **Camada de Enlace de Dados**
 
+A camada de enlace do modelo OSI é responsável por garantir a transferência confiável de dados entre sistemas. Ela funciona como um fiscal, verificando se os pacotes de dados estão corretos e controlando o fluxo de transmissão.
 
 - Protocolos usados: PPP (point-to-point), NDP, ARP, MAC...
