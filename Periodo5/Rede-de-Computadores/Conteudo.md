@@ -157,7 +157,7 @@ O modelo TCP/IP possui quatro camadas: Camada de Aplicação, Camada de Transpor
 
 Cada camada possui um conjunto de protocolos que permitem a transmissão de dados e a comutação de pacotes entre diferentes nós em uma rede.
 
-![modelo tcp/ip - modelo osi](Images/image-8.png)
+![modelo tcp/ip - modelo osi](Images/image-8.PNG)
 
 > O modelo TCP/IP implementa o modelo OSI, onde o modelo prático é o próprio TCP/IP, e o modelo teórico é o OSI.
 
