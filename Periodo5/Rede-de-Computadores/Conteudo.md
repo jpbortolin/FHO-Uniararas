@@ -308,15 +308,116 @@ Um switch de rede, ou comutador, é um dispositivo que conecta vários dispositi
 Modos de Transmissão de Dados referente ao sentido: Simplex, Half-Duplex e Full-Duplex
 
 **Simplex**
+
 É o modo de transmissão em sentido único ou uniderecional, caracteriza-se em uma ligação na qual os dados circulam num só um sentido, ou seja do emissor para o receptor.
+
 Exemplos: Rádio, TV.
 
 **Half-Duplex**
+
 É o modo de transmissão em sentido duplo em função do tempo, não simultâneo. Assim, com este tipo de ligação, cada extremidade da ligação emite por sua vez.
+
 Exemplos: Walkie-talkies, Redes de computadores, Sistemas de telecomunicações, Redes Wi-Fi.
 
 **Full-Duplex**
+
 É o modo de transmissão em sentido duplo ou bidirecional simultâneo. Assim, cada extremidade da linha pode emitir e receber ao mesmo tempo, o que significa que a banda concorrida está dividida por dois para cada sentido de emissão dos dados.
+
 Exemplo: Celular.
 
-> As taxas de Tx (emissor/transmissor) e RX (receptor) referem-se a taxas de transmissão ou recepção de dados. Os dados TX referem-se à quantidade de dados transmitidos e os dados RX referem-se à quantidade de dados recebidos
+> As taxas de Tx (emissor/transmissor) e RX (receptor) referem-se a taxas de transmissão ou recepção de dados. Os dados TX referem-se à quantidade de dados transmitidos e os dados RX referem-se à quantidade de dados recebidos.
+
+
+
+---
+
+    
+
+# Aula 5 - 25/03/2025
+## A Camada de Internet/Rede (Modelo TCP/IP - Camada 2)
+
+### Rede Wi-fi 802.11
+O padrão 802.11 é uma família de especificações que define a tecnologia Wi-Fi, ou seja, redes locais sem fio (WLAN). O 802.11 foi o primeiro padrão de rede sem fio a ser amplamente adotado. 
+
+> 802.11a, 802.11b, 802.11g e 802.11n são padrões de Wi-Fi definidos pelo IEEE (Institute of Electrical and Electronics Engineers). Eles definem como os dispositivos se conectam e se comunicam sem fio, com a trasmissão de dados de no máximo 2,4GHz.
+
+> 802.11ac opera com a frequência de 5GHz.
+
+### Protocolo de roteamento 
+
+Os protocolos de roteamento são regras que definem como os roteadores encaminham pacotes de dados por uma rede. Eles podem ser **internos** ou **externos**, dependendo do tipo de rede que utilizam. 
+
+**Protocolos de roteamento internos**
+- OSPF: Identifica as rotas mais curtas e rápidas para enviar pacotes. É um protocolo de estado de enlace. 
+- ISIS: Um protocolo de estado de enlace. 
+- IGRP: Um protocolo de vetor de distância. 
+
+**Protocolos de roteamento externos**
+- BGP: Anuncia quais redes controlam quais endereços de IP e quais redes se conectam entre si. É um protocolo de roteamento dinâmico.
+
+**Protocolos de roteamento autônomos**
+
+Os protocolos de roteamento autônomos são usados para trocar informações entre os sistemas autônomos (AS) de uma rede. Os AS são redes menores que podem ser provedores de internet, universidades ou redes corporativas.
+ 
+> **BGP - Border Gateway Protocol:**
+Anuncia quais redes controlam quais endereços IP e quais redes se conectam entre si. 
+
+> **EGP - Exterior Gateway Protocol:**
+É um protocolo de roteamento que permite a comunicação entre diferentes sistemas autônomos. É usado para que todos os sistemas autônomos da internet mantenham informações atualizadas. 
+
+## Camada de Aplicação (Modelo TCP/IP - Camada 4)
+
+### Protocolos
+- **DHCP:** ele é responsável pela configuração dinâmica do endereço IP. Ou seja, por meio desse protocolo, e do serviço de DHCP é possível a configuração automática e a disseminação de endereços IPs em toda a rede.
+> DHCP utiliza protocolo UDP na camada de transporte, onde a porta de comunicação utilizada é a 67
+
+- **DNS:** é o protocolo de resolução de nomes de domínio. O protocolo responsável por resolver todos os nomes de domínio existentes na internet ou na rede interna. A partir dele podemos saber qual o endereço IP do site que estamos tentando acessar.
+> DNS utiliza protocolo UDP na camada de transporte, onde a porta de comunicação utilizada é a 53
+
+- **FTP/SFTP:** é muito utilizado na transferência de arquivos (seguro). Utiliza para a publicação de arquivos de qualquer tipo na rede, e dessa forma qualquer host com acesso pode fazer o download do arquivo em sua íntegra. 
+> FTP/SFTP utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 21
+
+- **SSH:** é utilizado para acesso remoto controlado em ambiente shell (prompt de comando) muito utilizado por desenvolvedores ou analistas de redes para acessos remotos em servidores Linux.
+> SSH utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 22
+
+- **RDP:** é o protocolo de acesso remoto para ambiente Windows, exatamente mesma funcionalidade do SSH, porém para ambiente Windows
+> RDP utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 3389
+
+- **SNMP:** é utilizado para monitorar e gerenciar as redes, protocolo simples e muito leve, não causa danos ou trafégos excessivos na rede, e consegue trazer vários metadados de equipamentos conectados a rede para sua gestão e monitoramonto remoto.
+> SNMP utiliza protocolo UDP na camada de transporte, onde a porta de comunicação utilizada é a 161
+
+- **IMAP:** é o protocolo de recebimento de mensagens de email. Ele permite que vo^ce acesse de qualquer lugar sua caixa de correio eletrônico.
+> IMAP utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 143 ou 993
+
+- **POP3:** tem a mesma funcionalidade do protocolo IMAP, porém ao invés de permitir acesso ao email, ele faz o download das mensagens.
+> POP3 utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 110
+
+- **SMTP:** é o protocolo de envio de mensagens de email.
+> SMTP utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 587.
+
+- **HTTP:** é o protocolo utilizado para transferência de hipertexto e hipermídia, sendo a base para as páginas web que temos acesso hoje, sites, etc.
+> HTPP utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 80 ou 8080
+
+- **HTTPS:** é a evolução do HTTP, adicionando uma camada robusta de criptografia dos dados e autenticação de certificado digital.
+> HTTPS utiliza protocolo TCP na camada de transporte, onde a porta de comunicação utilizada é a 443
+
+- **NTP:** é o protocolo utilizado para sincronização de data e hora dos equipamentos de rede. Muito utilizado para sincronização, e manter os registros de logos de acesso com data e hora padrão, para facilitar a verificação e auditoria.
+> NTP utiliza protocolo UDP na camada de transporte, onde a porta de comunicação utilizada é a 123
+
+## A Camada de Internet/Rede (Modelo TCP/IP - Camada 2) 
+
+### Protocolos
+- **ICMP:** é o protocolo integrado de controle do protocolo IP, destinado a envio e recebimento de mensagens de controle. É o protocolo utilizado para retorno de mensagens de erro do protocolo IP.
+
+- **RIP:** é um protocolo de roteamento, baseado no algoritmo Vetor-distância. É utilizado para configuração de rotas de roteamento estáticos entre roteadores de borda de operadoras.
+
+- **OSPF:** é um protocolo de roteamento dinâmico, também destinado a configuração de rotas estáticas entre roteadores, porém baseado sempre no caminho mais curto até o destino. Muito utilizado em redes de redundância, e topologia em anel.
+
+## A Camada de Enlace (Modelo TCP/IP - Camada 2) 
+
+### Protocolos
+- **Ethernet:** protocolo de conexão que garante como os hardwares se comunicam através do meio físico.
+
+- **ARP:** é o protocolo de resolução de endereços IP, através dele é gerada a tabela ARP, onde contém os endereços IP e endereços MACadress dos equipamentos conectados na rede.
+
+- **PPP:** é usado para estabelecer conexões entre dois roteadores diretamente, sem nenhum host ou outra rede no meio.  
