@@ -3,12 +3,10 @@
 
 int main()
 {
+    int matriz_duplicada;
     int tam = 2;
     int matriz[2][2];
 
-    //Estrutura do for para leitura de dados
-    //O índice i = linha
-    //O índice j = coluna
     for (int i = 0; i < tam; i++) {
         for (int j = 0; j < tam; j++) {
             printf("[%d][%d]=", i , j);
@@ -18,12 +16,12 @@ int main()
 
     printf("\n");
 
-    //Exibindo os elementos
     for (int i = 0; i < tam; i++) {
         for (int j = 0; j < tam; j++) {
-            printf("%d\t", matriz[i][j]);
+            matriz_duplicada = matriz[i][j] * 2;
+            printf("%d\t", matriz_duplicada);
         }
-        printf("\n"); //indica nova linha da matriz
+        printf("\n");
     }
     
     
