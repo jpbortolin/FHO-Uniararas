@@ -334,7 +334,9 @@ Exemplo: Celular.
     
 
 # Aula 5 - 25/03/2025
-## A Camada de Internet/Rede (Modelo TCP/IP - Camada 2)
+## Protocolos das camadas do modelo TCP/IP
+
+### A Camada de Internet/Rede (Modelo TCP/IP - Camada 2)
 
 ### Rede Wi-fi 802.11
 O padrão 802.11 é uma família de especificações que define a tecnologia Wi-Fi, ou seja, redes locais sem fio (WLAN). O 802.11 foi o primeiro padrão de rede sem fio a ser amplamente adotado. 
@@ -420,4 +422,18 @@ Anuncia quais redes controlam quais endereços IP e quais redes se conectam entr
 
 - **ARP:** é o protocolo de resolução de endereços IP, através dele é gerada a tabela ARP, onde contém os endereços IP e endereços MACadress dos equipamentos conectados na rede.
 
-- **PPP:** é usado para estabelecer conexões entre dois roteadores diretamente, sem nenhum host ou outra rede no meio.  
+- **PPP:** é usado para estabelecer conexões entre dois roteadores diretamente, sem nenhum host ou outra rede no meio.
+
+
+
+---
+ 
+    
+
+# Aula 6 - 01/04/2025
+## Multplexação de Sinais
+A multiplexação de sinais em redes é uma técnica que combina vários sinais digitais ou analógicos em um único sinal composto. O objetivo é compartilhar um recurso escasso, como um meio de transmissão física. 
+
+![transmission fiber line](Images/transmissionfiberline.gif)
+
+A multiplexação é utilizada em redes de computadores e telecomunicações. 
