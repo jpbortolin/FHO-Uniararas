@@ -436,4 +436,39 @@ A multiplexação de sinais em redes é uma técnica que combina vários sinais 
 
 ![transmission fiber line](Images/transmissionfiberline.gif)
 
-A multiplexação é utilizada em redes de computadores e telecomunicações. 
+A multiplexação é utilizada em redes de computadores e telecomunicações.
+
+
+
+---
+ 
+    
+
+# Aula 7 - 22/04/2025
+## Serviços para melhorar um VoIP
+
+### QoS (Quality of Service)
+QoS  é um conjunto de tecnologias e práticas que visam melhorar a qualidade do serviço de rede, garantindo que aplicações críticas recebam a largura de banda e a prioridade necessárias para funcionar de forma eficiente, mesmo em situações de congestionamento. Em resumo, o QoS permite priorizar determinados tipos de tráfego.
+
+### VLAN (Virtual Local Area Network)
+Em termos de redes de computadores, uma VLAN é uma rede local virtual criada dentro de uma rede física. Ela permite segmentar uma rede em sub-redes virtuais, facilitando a gestão, melhorando a segurança e o desempenho.
+
+## Endereços de Rede e Ip (Exemplo)
+
+**Endereço IP**: 192.168.0.35
+
+- **Meu ID**: 192.168
+
+- **Host ID (quantidade de IP's)**: 0.35
+
+> **Rede**: 192.168.0.0
+
+> **Broadcast**: 192.168.255.255
+
+> **Mask**: 255.255.0.0
+
+> **Ip inicial (Gateway)**: 192.168.0.1
+
+> **Ip final**: 192.168.255.254
+
+- Loopback: 127.0.0.0 / 127.255.255.255
