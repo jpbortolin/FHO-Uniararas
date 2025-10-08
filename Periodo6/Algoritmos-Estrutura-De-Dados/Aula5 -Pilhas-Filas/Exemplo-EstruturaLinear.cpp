@@ -18,7 +18,7 @@ typedef struct {
 
 // Receberá a referência da pilha
 // Inicializa a pilha com o top -1
-void init(Stack& s){
+void init(Stack& s) {
     s.top = -1;
 }
 
