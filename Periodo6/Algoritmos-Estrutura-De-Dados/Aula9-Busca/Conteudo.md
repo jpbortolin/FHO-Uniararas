@@ -8,5 +8,4 @@
 
 ## Busca Binária
 
-- Vetor precisa estar "Ordenado";
-- 
+- Vetor precisa estar "Ordenado", em ordem crescente, decrescente, tanto faz... apenas tem que estar ordenado.
