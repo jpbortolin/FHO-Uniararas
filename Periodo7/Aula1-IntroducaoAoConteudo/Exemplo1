@@ -1,0 +1,39 @@
+namespace Primeiro_Projeto_CSharp 
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            //Definição de variáveis
+            int ano = 2026;
+            string curso = "Engenharia de Computação";
+            float dolar = 5.17f;
+            bool status = false; //true
+            
+            //Escrita na tela!!
+            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Curso: " + curso);
+            //Aceita também o operador de interpolação
+            Console.WriteLine($"O curso atual é {curso} - O dolar atual está em {dolar}");
+
+            //Atribuição de valores - leitura do teclado
+            Console.WriteLine("Informe o valor do dolar: ");
+            dolar = float.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o ano:");
+            ano = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o curso:");
+            curso = Console.ReadLine();
+
+            //Exibindo as informações
+            Console.WriteLine($"Curso: {curso}\n Dolar: {dolar}\n Ano: {ano}");
+
+            //Validando se o dolar está abaixo de 5.10 para a compra
+            if (dolar <= 5.10) {
+                Console.WriteLine("Sugiro a compra do dolar!");
+            }
+            else {
+                Console.WriteLine("Sugiro aguardar abaixar mais...");
+            }
+        }
+    }
+}

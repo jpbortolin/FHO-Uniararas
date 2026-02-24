@@ -1,0 +1,48 @@
+namespace primeiroExercicio_MB1 
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome1;
+            string nome2; 
+            string nome3;
+            int qtd1;
+            int qtd2; 
+            int qtd3;
+    
+            Console.WriteLine("Digite o nome do primeiro produto:");
+            nome1 = Console.ReadLine();
+            Console.WriteLine("Digite a quantidade:");
+            qtd1 = int.Parse(Console.ReadLine());
+    
+            Console.WriteLine("Digite o nome do segundo produto:");
+            nome2 = Console.ReadLine();
+            Console.WriteLine("Digite a quantidade:");
+            qtd2 = int.Parse(Console.ReadLine());
+    
+            Console.WriteLine("Digite o nome do terceiro produto:");
+            nome3 = Console.ReadLine();
+            Console.WriteLine("Digite a quantidade:");
+            qtd3 = int.Parse(Console.ReadLine());
+    
+            string menorProduto = nome1;
+            int menorQuantidade = qtd1;
+    
+            if (qtd2 < menorQuantidade)
+            {
+                menorQuantidade = qtd2;
+                menorProduto = nome2;
+            }
+    
+            if (qtd3 < menorQuantidade)
+            {
+                menorQuantidade = qtd3;
+                menorProduto = nome3;
+            }
+    
+            Console.WriteLine("\nProduto prioritário para reposição: " + menorProduto);
+            Console.WriteLine("Quantidade em estoque: " + menorQuantidade);
+        }
+    }
+}
