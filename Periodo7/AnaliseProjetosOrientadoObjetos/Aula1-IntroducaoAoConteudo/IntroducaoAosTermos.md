@@ -1,4 +1,4 @@
-# Análise e Projetos Orientados a Objetos - 23/02
+# Análise e Projetos Orientados a Objetos
 
 ## Principais entidades:
 
